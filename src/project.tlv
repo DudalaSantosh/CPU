@@ -191,7 +191,7 @@
               (>>1$rf_wr_index == $rs2) && >>1$rf_wr_en
                   ?  >>1$result   :
                      $rf_rd_data2 ;
-         $jalr_tgt_pc[31:0] = $rs1_value[31:0] + $imm[31:0];
+         $jalr_tgt_pc[31:0] = $src1_value[31:0] + $imm[31:0];
       @3
          //RF write
          /* verilator lint_off WIDTH */
